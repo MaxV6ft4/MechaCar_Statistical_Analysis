@@ -12,3 +12,21 @@ Based on the summary of the multiple linear regression, we can conclude that the
 ![lot](https://github.com/MaxV6ft4/MechaCar_Statistical_Analysis/blob/main/Screenshots/Lot_Summary.png)
 
 According to the MechaCar suspension coil design specifications, the variance of the coils must not exceed 100 PSI.  After calculating the total PSI variance for the entire dataset, I generated a variance of 62.29 PSI, well under the 100 PSI maximum.  However, after calculating the variance lot by lot, I saw that in lot 3, the variance was 170.29 PSI, much higher than the designated maximum.  Compared to lots 1 and 2 (both having PSI variances under 10!), lot 3 appears to be having tons of trouble in the manufacturing process!
+
+## T-Tests On Suspension Coils
+
+![coil](https://github.com/MaxV6ft4/MechaCar_Statistical_Analysis/blob/main/Screenshots/Coil.png)
+
+The t-test that compares the PSI across all lots to the population mean (1500 PSI) had a p-value of 0.06, just above the significance level of 0.05.  This means that there is just enough evidence to reject the null hypothesis stating that the two PSI means are not statistically similar.
+
+![lot1](https://github.com/MaxV6ft4/MechaCar_Statistical_Analysis/blob/main/Screenshots/Lot1.png)
+
+The t-test comparing PSI in Lot 1's vehicles to the population mean displayed an extraordinary result.  The p-value was exactly 1, meaning that the mean PSI in Lot 1 is exactly 1500!  It is therefore equal to the population mean.
+
+![lot2](https://github.com/MaxV6ft4/MechaCar_Statistical_Analysis/blob/main/Screenshots/Lot2.png)
+
+The t-test comparing PSI in Lot 2's vehicles to the population mean showed a p-value of 0.61.  There is more than enough evidence here of statistical similarity between the two means, and the null hypothesis can be rejected.
+
+![lot3](https://github.com/MaxV6ft4/MechaCar_Statistical_Analysis/blob/main/Screenshots/Lot3.png)
+
+Unfortunately, the final t-test did not display similar results.  The p-value here was 0.04, below the significance level.  This means that there is not enough evidence to reject the null hypothesis for Lot 3.  The mean PSI for vehicles here has been proven to be quite different than the population mean.
