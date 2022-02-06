@@ -30,3 +30,9 @@ The t-test comparing PSI in Lot 2's vehicles to the population mean showed a p-v
 ![lot3](https://github.com/MaxV6ft4/MechaCar_Statistical_Analysis/blob/main/Screenshots/Lot3.png)
 
 Unfortunately, the final t-test did not display similar results.  The p-value here was 0.04, below the significance level.  This means that there is not enough evidence to reject the null hypothesis for Lot 3.  The mean PSI for vehicles here has been proven to be quite different than the population mean.
+
+## Study Design: MechaCar vs. Competition
+- to successfully compare MechaCar against the current automotive competition, I'd have to select from metrics that modern-day consumers care about the most.  These would include fuel efficiency (both city and highway), total cost, average maintenance cost, and weight of the vehicle.  However for my test I would focus on mpg.  
+- for every study there needs to be both a null and an alternative hypothesis.  My null hypothesis would state that there is no statistical difference between the mean mpg of MechaCars and the mean mpg of the competition.  The alternative hypothesis would state that there is evidence of a statistical difference between the two means.
+- To prove or disprove the null hypothesis, I would use a two-sample t-test whose x and y values would be the mpg data from the tables containing the MechaCar and competition data, respectively.
+- Data for this t-test would need to be numerical.  Fortunately the mpg data is numerical so there is no need for transformation here.  It would also need to be continuous, i.e. able to be subdivided an indefinite number of times.  This is also applicable to mpg data.
